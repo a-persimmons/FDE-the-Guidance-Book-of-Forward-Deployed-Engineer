@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" role="img" aria-labelledby="title desc">
+<title id="title">FDE 前线部署工程师</title><desc id="desc">范冰著，人工智能时代的客户价值交付秘籍，网站阅读版封面。</desc>
+<defs><linearGradient id="cover" x2="1" y2="1"><stop stop-color="#203e58"/><stop offset="1" stop-color="#102335"/></linearGradient><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#8cbbcd" stroke-opacity=".09"/></pattern></defs>
+<rect x="5" y="4" width="410" height="532" rx="12" fill="url(#cover)"/>
+<rect x="5" y="4" width="410" height="532" rx="12" fill="url(#grid)"/>
+<path d="M29 5v530" stroke="#7895a8" stroke-opacity=".35"/><path d="M56 62h47" stroke="#eda16a" stroke-width="5"/>
+<g font-family="Inter, Arial, PingFang SC, Microsoft YaHei, sans-serif"><text x="56" y="103" fill="#b6cad5" font-size="13" letter-spacing="2">FORWARD DEPLOYED ENGINEER</text>
+<text x="50" y="230" fill="#f5eee0" font-size="112" font-weight="750" letter-spacing="-6">FDE</text>
+<text x="56" y="285" fill="#f5eee0" font-size="30" font-weight="600">前线部署工程师</text>
+<text x="56" y="327" fill="#b6cad5" font-size="15">人工智能时代的客户价值交付秘籍</text>
+<path d="M56 374h300" stroke="#6c8b9d" stroke-opacity=".5"/>
+<circle cx="62" cy="411" r="5" fill="#eda16a"/><path d="M68 411h138l28 28h116" stroke="#eda16a" stroke-width="2" fill="none"/><circle cx="352" cy="439" r="5" fill="#eda16a"/>
+<text x="56" y="491" fill="#f5eee0" font-size="17">范冰 著</text><text x="299" y="491" fill="#b6cad5" font-size="12">网页阅读版</text></g></svg>

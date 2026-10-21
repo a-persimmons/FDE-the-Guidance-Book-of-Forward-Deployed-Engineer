@@ -43,6 +43,8 @@
 
 ## 阅读方式
 
+- **本仓库阅读站（VitePress）**：[在线阅读](https://a-persimmons.github.io/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer/)
+
 - **官网阅读**：[fde4.ai](https://fde4.ai)（与仓库实时同步，手机端体验更好）
 - **在线阅读**：点击下方目录，直接在 GitHub 上按章节阅读
 - **整本下载**：[前线部署工程师（FDE）v1.0.24.pdf](前线部署工程师（FDE）v1.0.24.pdf)（根目录合并版；如有更新以章节 Markdown 为准）
@@ -72,3 +74,32 @@
 ---
 
 如果这本书对你有帮助，欢迎 Star 本仓库，或把它分享给需要的人。
+
+
+## 本 fork 的阅读站部署
+
+本仓库使用 VitePress 构建独立阅读站，原有章节文件与 PDF 保留在根目录。全书目录、章节路由与 PDF 下载文件在构建时生成。
+
+首次部署需在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。此后推送到 `main` 会自动部署；也可以在 Actions 中手动运行 **Deploy VitePress to GitHub Pages**。如果首次运行发生在 Pages 启用之前，启用后重新运行失败的任务即可。
+
+本地预览：
+
+```bash
+npm ci
+npm run docs:dev
+```
+
+构建与预览构建结果：
+
+```bash
+npm run docs:build
+npm run docs:preview
+```
+
+- `.vitepress/`：站点导航、中文搜索与阅读样式。
+- `scripts/prepare-docs.mjs`：从原始章节生成目录，并根据 `VERSION` 复制对应 PDF 到下载目录。
+- `.github/workflows/pages.yml`：构建检查与 GitHub Pages 自动部署。
+- `contents.md` 和 `public/downloads/`：生成文件，无需手动编辑或提交。
+- 更新书籍内容：修改根目录章节，或先通过 GitHub 的 Sync fork 同步上游，再推送到 `main`。上游更新不会自行同步。
+
+原仓库的 `notify-site` 工作流只在原作者仓库运行，避免本 fork 向原作者的网站发送重建通知。
